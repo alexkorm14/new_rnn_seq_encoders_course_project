@@ -1,0 +1,19 @@
+category_cols:
+- trx_category
+- MCC
+- channel_type
+- currency
+events_file: transactions_rosbank.csv
+id_col: cl_id
+need_time_preprocess: true
+numeric_cols:
+- amount
+- day_of_month
+- month
+path_folder: drive/My Drive/pytorch-lifestream/data/rosbank_churn_prediction
+random_state: 42
+target_col: target_flag
+test_file: rosbank_test.csv
+time_col: PERIOD
+train_file: rosbank_train.csv
+val_size: 0.2

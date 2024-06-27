@@ -1,0 +1,18 @@
+category_cols:
+- small_group
+events_file: transactions_age.csv
+id_col: client_id
+need_time_preprocess: false
+numeric_cols:
+- amount_rur
+path_folder: drive/My Drive/pytorch-lifestream/data/sber_age_prediction
+random_state: 42
+target_col: bins
+test_file: age_test.csv
+time_col: trans_date
+train_file: age_train.csv
+trx_embed_dim:
+  small_group:
+    in: 202
+    out: 16
+val_size: 0.2

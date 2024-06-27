@@ -1,0 +1,18 @@
+batch_size: 128
+data_config: sberhack_gender_prediction_data.yaml
+min_seq_len: 20
+num_workers: 2
+rnn_config:
+  additional_params:
+    dt: 0.054
+    epsilon: 4.8
+    gamma: 4.9
+  bidir: false
+  category_emb_dim_reduction: 5
+  hidden_state: 64
+  num_layers: 1
+  rnn_type: cornn
+splitter_params:
+  cnt_max: 1000
+  cnt_min: 50
+  split_count: 20

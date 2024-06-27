@@ -1,0 +1,19 @@
+category_cols:
+- mcc_code
+- trans_type
+- trans_city
+events_file: transactions.csv
+id_col: client_id
+need_time_preprocess: true
+numeric_cols:
+- amount
+- day_of_month
+- month
+- hour
+path_folder: drive/My Drive/pytorch-lifestream/data/sber_gender_prediction
+random_state: 42
+target_col: gender
+test_file: test.csv
+time_col: trans_time
+train_file: train.csv
+val_size: 0.2

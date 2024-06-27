@@ -1,0 +1,17 @@
+batch_size: 128
+data_config: sber_age_prediction_data.yaml
+min_seq_len: 20
+num_workers: 2
+rnn_config:
+  additional_params:
+    memory_size: 128
+    theta: 500
+  bidir: false
+  category_emb_dim_reduction: 5
+  hidden_state: 64
+  num_layers: 1
+  rnn_type: lmu
+splitter_params:
+  cnt_max: 1200
+  cnt_min: 700
+  split_count: 50

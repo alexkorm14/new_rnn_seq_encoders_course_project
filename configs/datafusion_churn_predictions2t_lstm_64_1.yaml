@@ -1,0 +1,14 @@
+batch_size: 10
+data_config: datafusion_churn_prediction_data.yaml
+num_workers: 2
+rnn_config:
+  additional_params: null
+  bidir: false
+  category_emb_dim_reduction: 5
+  hidden_state: 64
+  num_layers: 1
+  own_head: false
+  rnn_type: lstm
+task:
+  num_classes: 1
+  objective: classification

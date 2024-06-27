@@ -1,0 +1,3 @@
+dataset,roc-auc,accuracy,f1,model_type,hidden_size,num_layers,bidir
+train,0.953,0.876,0.876,lstm,64,1,False
+valid,0.726,0.677,0.677,lstm,64,1,False

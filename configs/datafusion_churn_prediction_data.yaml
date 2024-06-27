@@ -1,0 +1,39 @@
+add_file: clients.csv
+category_cols:
+- mcc_code
+- currency_rk
+- employee_count_nm
+- bankemplstatus
+- customer_age
+- report
+events_file: transactions.csv
+id_col: user_id
+need_time_preprocess: true
+numeric_cols:
+- transaction_amt
+path_folder: drive/My Drive/pytorch-lifestream/data/datafusion_churn
+random_state: 42
+target_col: target
+test_size: 0.05
+time_col: transaction_dttm
+train_file: train.csv
+trx_embed_dim:
+  bankemplstatus:
+    in: 4
+    out: 2
+  currency_rk:
+    in: 6
+    out: 2
+  customer_age:
+    in: 6
+    out: 2
+  employee_count_nm:
+    in: 12
+    out: 3
+  mcc_code:
+    in: 334
+    out: 16
+  report:
+    in: 14
+    out: 3
+val_size: 0.15

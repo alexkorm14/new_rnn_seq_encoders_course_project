@@ -1,0 +1,3 @@
+dataset,accuracy,f1,model_type,hidden_size,num_layers,bidir
+train,0.656,0.656,gru,128,1,False
+valid,0.554,0.554,gru,128,1,False
