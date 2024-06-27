@@ -2,6 +2,7 @@
  Usage of new rnn model in pytorch lifestream
 
  Краткая навигация:
+ 
  ◦ seq_encoders - папка с моделями (в файле модели приложена ссылка на гит источник) + new_rnn_encoder.py (класс RnnEncoder с добавлением новых архитектур) + simple_seq_encoder.py (для создания seq encoder на основании trx encoder + rnn encoder)
  
  ◦ Data - папка с данными исходными и предобработанными для моделирования
